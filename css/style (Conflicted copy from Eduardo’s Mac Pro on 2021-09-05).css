@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%); /* graphic design text */
+    --dark-blue: hsl(198, 62%, 26%); /* photography text */
+    --dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
+
+    /* Neutral colors */
+
+    --very-dark-desatured-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+/**********************
+GENERAL
+***********************/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+
+/**********************
+NAV AND HERO
+***********************/
+header {
+    background-image: url("../images/mobile/image-header.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.headline h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 8px;
+    margin-bottom: 4rem;
+}
+
+
+/**********************
+FEATURES SECTION
+***********************/
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/**** SMALLER FEATURES *****/
+.egg,
+.cup {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.egg {
+    background-image: url(../images/mobile/image-transform.jpg);
+}
+
+.cup {
+    background-image: url(../images/mobile/image-stand-out.jpg);
+}
+
+.transform-copy,
+.standout-copy,
+.graphic-design,
+.photography {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.transform-copy h2,
+.standout-copy h2 {
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--very-dark-desatured-blue);
+    margin-bottom: 1em;
+}
+
+.transform-copy p,
+.standout-copy p {
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: var(--grayish-blue);
+    line-height: 1.8rem;
+}
+
+.features-container a {
+    font-family: 'Fraunces', serif;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--very-dark-desatured-blue);
+}
+
+.features-container a:link {
+    color: var(--very-dark-desatured-blue);
+}
+
+/* LARGER FEATURES */
+.graphic-design,
+.photography {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-repeat: none;
+    background-size: cover;
+    background-position: top;
+    height: 600px;
+}
+
+.photography {
+    color: var(--dark-blue);
+}
+
+.graphic-design {
+    color: var(--dark-desaturated-cyan);
+}
+
+.graphic-design h2,
+.photography h2 {
+    font-size: 1.75em;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.graphic-design p,
+.photography p {
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.8rem;
+}
+
+.graphic-design {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+
+.photography {
+    background-image: url("../images/mobile/image-photography.jpg");
+}
+
+/**********************
+TESTIMONIALS SECTION
+***********************/
+.testimonial-container {
+    background-color: var(--white);
+    padding-top: 4rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+
+.card {
+    padding: 4rem 2rem 0 2rem;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 75px;
+    margin-bottom: 2.5em;
+}
+
+.card p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2em;
+    color: var(--grayish-blue);
+    margin-bottom: 2em;
+}
+
+.client-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
