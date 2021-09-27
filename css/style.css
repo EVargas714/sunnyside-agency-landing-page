@@ -187,9 +187,16 @@ FEATURES SECTION
 .standout-copy,
 .graphic-design,
 .photography {
+    display: flex;
+    flex-direction: column;
     padding: 3rem 1rem;
     text-align: center;
     background-color: white;
+}
+
+.transform-copy,
+.standout-copy {
+    justify-content: center;
 }
 
 .transform-copy h2,
@@ -211,6 +218,8 @@ FEATURES SECTION
 }
 
 .features-container a {
+    display: block;
+    margin: 0 auto;
     font-family: 'Fraunces', serif;
     font-size: 1em;
     text-decoration: none;
@@ -220,7 +229,8 @@ FEATURES SECTION
     z-index: 1;
 }
 
-.features-container a::after {
+.features-container .transform-copy a::after,
+.features-container .standout-copy a::after {
     content: "";
     position: absolute;
     height: 10px;
@@ -235,6 +245,7 @@ FEATURES SECTION
 .transform-copy a::after {
     background-color: var(--light-yellow);
 }
+
 .transform-copy a:hover::after {
     background-color: var(--yellow);
 }
@@ -253,8 +264,6 @@ FEATURES SECTION
 /* LARGER FEATURES */
 .graphic-design,
 .photography {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     background-repeat: none;
     background-size: cover;
