@@ -448,11 +448,13 @@ FEATURES SECTION
     
     header {
         background-image: url("../images/desktop/image-header.jpg");
+        height: 600px;
     }
 
     nav {
         align-items: center;
-        padding: 1rem;
+        padding: 2rem;
+        margin-bottom: 100px;
     }
 
     .nav-container {
@@ -489,6 +491,7 @@ FEATURES SECTION
     width: 125px;
     padding: .75rem;
     border-radius: 50px;
+    background-color: white;
     }
 
 
@@ -551,6 +554,83 @@ FEATURES SECTION
 
     .photography {
         background-image: url(../images/desktop/image-photography.jpg);
+    }
+
+/**********************
+TESTIMONIALS SECTION
+***********************/
+
+    .testimonial-group {
+        display: flex;
+    }
+
+    .card {
+        height: 350px;
+        justify-content: flex-start;
+    }
+
+    .card:last-child {
+        padding-bottom: 0em;
+        margin-bottom: 4em;
+    }
+
+    .profile-pic {
+        margin-bottom: 2rem;
+    }
+
+    .card p {
+        margin-bottom: auto;
+        font-size: .95rem;
+    }
+
+
+/**********************
+GALLERY SECTION
+***********************/
+
+.pictures-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+
+
+/* DESKTOP SIZE *****************/
+@media only screen and (min-width: 950px) {
+
+    body {
+        background-color:hsla(186, 100%, 86%, 1);
+    }
+
+    header {
+        height: 800px;
+    }
+
+    .headline h1 {
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .arrow-img {
+        height: 100px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px 500px 500px;
+    }
+
+    .transform-copy,
+    .standout-copy {
+        text-align: left;
+        padding: 10rem;
+    }
+
+    .transform-copy p,
+    .standout-copy p {
+    font-size: 1rem;
+    line-height: 1.4rem;
     }
 
 
