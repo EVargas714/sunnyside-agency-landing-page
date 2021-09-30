@@ -431,6 +431,16 @@ FEATURES SECTION
 .photography {
     background-position: 50% 30%;
 } 
+
+/**********************
+GALLERY SECTION
+***********************/
+
+.pictures-container ul {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
 }
 
 
@@ -582,16 +592,6 @@ TESTIMONIALS SECTION
         margin-bottom: auto;
         font-size: .95rem;
     }
-
-
-/**********************
-GALLERY SECTION
-***********************/
-
-.pictures-container ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 }
 
 
