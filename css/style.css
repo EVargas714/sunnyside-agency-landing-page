@@ -415,6 +415,8 @@ footer {
 
 
 
+
+
 /* PRE TABLET-SIZE ADJUSTMENTS *************/
 @media only screen and (min-width: 500px) {
 
@@ -581,7 +583,6 @@ TESTIMONIALS SECTION
 
     .card:last-child {
         padding-bottom: 0em;
-        margin-bottom: 4em;
     }
 
     .profile-pic {
@@ -618,7 +619,13 @@ TESTIMONIALS SECTION
 
     .features-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 500px 500px 500px;
+        grid-template-rows: 600px 600px 600px;
+    }
+
+    .transform-copy h2,
+    .standout-copy h2 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
     }
 
     .transform-copy,
@@ -631,7 +638,53 @@ TESTIMONIALS SECTION
     .standout-copy p {
     font-size: 1rem;
     line-height: 1.4rem;
+    margin-bottom: 2rem;
     }
+
+    .features-container a {
+        margin: 0 0;
+    }
+
+    .graphic-design p,
+    .photography p {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .testimonial-container {
+        padding: 7rem;
+    }
+
+    .testimonial-headline {
+        padding: 0;
+        margin-bottom: 5rem;
+    }
+
+    .testimonial-group {
+        justify-content: flex-start;
+    }
+
+    .card:last-child {
+        margin-bottom: 0em;
+    }
+
+    .testimonial-group {
+    justify-content: space-between;
+    }
+
+    .card {
+        margin-bottom: 0;
+        padding: 0;
+        width: 300px;
+    }
+
+    .footer-nav {
+        justify-content: space-between;
+        width: 300px;
+        margin: 0 auto 4em auto;
+    }
+
+
 
 
 }
