@@ -60,6 +60,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 2em;
+
 }
 
 .headline h1 {
@@ -86,6 +87,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1.7em;
+    position: relative;
 }
 
 .nav-container {
@@ -93,8 +95,9 @@ nav {
     width: 325px;
     left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: 1.5rem;
     top: 75px;
-    margin: 0 auto;
     text-align: center;
     height: 0;
     transition: height .5s ease;
@@ -147,6 +150,7 @@ nav {
     border-radius: 50px;
     background-color: var(--yellow);
     color: var(--very-dark-grayish-blue);
+    font-family: 'Fraunces', serif;
 }
 
 .nav-menu li:nth-child(4) a:hover {
@@ -164,7 +168,8 @@ FEATURES SECTION
 .features-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 300px) 600px 600px;
+    /* grid-template-rows: repeat(4, 400px) 600px 600px; */
+    grid-template-rows: 300px 450px 300px 450px repeat(2, 600px);
 }
 
 /**** SMALLER FEATURES *****/
@@ -189,7 +194,7 @@ FEATURES SECTION
 .photography {
     display: flex;
     flex-direction: column;
-    padding: 3rem 1rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     background-color: white;
 }
@@ -424,6 +429,14 @@ footer {
 FEATURES SECTION
 ***********************/
 
+.headline {
+    padding: 0 1rem;
+}
+
+.features-container {
+    grid-template-rows: 450px 450px 450px 450px repeat(2, 600px);
+}
+
 .egg,
 .cup {
     background-position: 50% 40%;
@@ -474,6 +487,7 @@ GALLERY SECTION
         height: auto;
         margin: 0;
         top: 0;
+        left: 0;
         width: 400px;
     }
 
