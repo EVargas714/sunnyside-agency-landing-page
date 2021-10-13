@@ -154,7 +154,7 @@ nav {
 }
 
 .nav-menu li:nth-child(4) a:hover {
-    color: var(--grayish-blue);
+    color: black;
 }
 
 .collapse {
@@ -168,7 +168,6 @@ FEATURES SECTION
 .features-container {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(4, 400px) 600px 600px; */
     grid-template-rows: 300px 450px 300px 450px repeat(2, 600px);
 }
 
@@ -418,10 +417,6 @@ footer {
 
 
 
-
-
-
-
 /* PRE TABLET-SIZE ADJUSTMENTS *************/
 @media only screen and (min-width: 500px) {
 
@@ -454,11 +449,7 @@ GALLERY SECTION
 .pictures-container ul {
     grid-template-columns: repeat(4, 1fr);
 }
-
-
 }
-
-
 
 
 
@@ -697,8 +688,4 @@ TESTIMONIALS SECTION
         width: 300px;
         margin: 0 auto 4em auto;
     }
-
-
-
-
 }
